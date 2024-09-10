@@ -17,23 +17,27 @@ body {
   color: #dd2e44;
   font-family: "Press Start 2P", cursive;
   text-align: center;
+  margin: 0;
 }
 
 nav {
-  padding: 20px;
+  padding: 1%;
   background-color: #202020;
   border-bottom: 2px solid #dd2e44;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
   text-decoration: none;
   color: #dd2e44;
-  margin: 0 20px;
+  margin: 0 15px;
+  display: inline-block;
 }
 
 nav a:hover {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 section {
@@ -42,16 +46,18 @@ section {
 
 #home h2 {
   animation: colorChange 2s infinite; /* Animasyonun süresi ve tekrarlama */
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .game-box {
   display: inline-block;
-  margin: 15px;
+  margin: 10px;
   padding: 10px;
   background-color: #303030;
   border: 2px solid #dd2e44;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 .game-box img {
@@ -69,38 +75,20 @@ section {
   margin-top: 10px;
 }
 
-section#about {
+section#about, section#contact {
   text-align: center;
   padding: 50px;
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto; /* Ortalamak için */
-  margin-top: 100px;
 }
 
-section#about h2 {
+section#about h2, section#contact h2 {
   color: white;
 }
 
-section#about p {
+section#about p, section#contact p {
   margin-top: 30px; /* Paragraf ile başlık arasına boşluk */
-  line-height: 2; /*yazı aralığı */
-}
-
-section#contact {
-  text-align: center;
-  padding: 50px;
-  max-width: 600px;
-  margin: 0 auto; /* Ortalamak için */
-  margin-top: 50px;
-}
-
-section#contact h2 {
-  color: white;
-}
-
-section#contact p {
-  margin-top: 30px; /* Paragraf ile başlık arasına boşluk */
-  line-height: 2; /* Daha okunaklı bir yazı aralığı */
+  line-height: 1.6; /* Daha okunaklı bir yazı aralığı */
 }
 
 footer {
@@ -108,10 +96,13 @@ footer {
   background-color: #202020;
   border-top: 2px solid #dd2e44;
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer p {
   font-size: 0.8em;
+  margin: 0;
 }
 
 .social-icons {
@@ -128,4 +119,58 @@ footer p {
   width: 30px;
   height: 30px;
   vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    margin: 0 5px;
+    font-size: 16px;
+  }
+
+  .game-box {
+    width: 80%;
+    max-width: none;
+    margin: 10px auto;
+  }
+
+  section#about, section#contact {
+    padding: 30px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 10px;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .game-box {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  section#about, section#contact {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
 }
