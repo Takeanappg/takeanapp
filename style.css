@@ -1,0 +1,131 @@
+@keyframes colorChange {
+  0% {
+    color: #dd2e44;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: #dd2e44;
+  }
+}
+
+body {
+  background-color: black;
+  color: #dd2e44;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+}
+
+nav {
+  padding: 20px;
+  background-color: #202020;
+  border-bottom: 2px solid #dd2e44;
+}
+
+nav a {
+  text-decoration: none;
+  color: #dd2e44;
+  margin: 0 20px;
+}
+
+nav a:hover {
+  color: white;
+  font-size: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+#home h2 {
+  animation: colorChange 2s infinite; /* Animasyonun süresi ve tekrarlama */
+  margin-bottom: 20px;
+}
+
+.game-box {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+  background-color: #303030;
+  border: 2px solid #dd2e44;
+  width: 400px;
+}
+
+.game-box img {
+  width: 100%;
+  height: auto;
+}
+
+.game-box p {
+  font-size: 15px;
+}
+
+.game-description {
+  font-size: 0.8em;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+section#about {
+  text-align: center;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto; /* Ortalamak için */
+  margin-top: 100px;
+}
+
+section#about h2 {
+  color: white;
+}
+
+section#about p {
+  margin-top: 30px; /* Paragraf ile başlık arasına boşluk */
+  line-height: 2; /*yazı aralığı */
+}
+
+section#contact {
+  text-align: center;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto; /* Ortalamak için */
+  margin-top: 50px;
+}
+
+section#contact h2 {
+  color: white;
+}
+
+section#contact p {
+  margin-top: 30px; /* Paragraf ile başlık arasına boşluk */
+  line-height: 2; /* Daha okunaklı bir yazı aralığı */
+}
+
+footer {
+  padding: 10px;
+  background-color: #202020;
+  border-top: 2px solid #dd2e44;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #dd2e44;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
