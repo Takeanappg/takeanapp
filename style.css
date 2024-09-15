@@ -76,7 +76,7 @@ section {
 }
 
 section#about, section#contact {
-  text-align: center;
+  text-align: center; 
   padding: 50px;
   max-width: 100%;
   margin: 0 auto; /* Ortalamak için */
@@ -123,23 +123,27 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+
   nav a {
     margin: 0 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .game-box {
-    width: 80%;
+    width: 90%;
     max-width: none;
     margin: 10px auto;
   }
 
   section#about, section#contact {
-    padding: 30px;
+    padding: 30px 15px;
   }
 
   footer {
-    padding: 20px;
+    padding: 15px;
   }
 
   .social-icons img {
@@ -149,24 +153,40 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 5px 0;
+  }
+
   nav a {
-    font-size: 10px;
+    font-size: 12px;
     display: block;
-    margin: 10px 0;
+    margin: 8px 0;
+  }
+
+  #home h2 {
+    font-size: 1.5em;
   }
 
   .game-box {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
+    width: 95%;
+    max-width: none;
+    margin: 10px auto;
+  }
+
+  .game-box p {
+    font-size: 13px;
   }
 
   section#about, section#contact {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   footer {
-    padding: 15px;
+    padding: 10px;
   }
 
   .social-icons img {
