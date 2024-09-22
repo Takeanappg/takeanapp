@@ -1,196 +1,204 @@
-@keyframes colorChange {
-  0% {
-    color: #dd2e44;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-  50% {
-    color: white;
-  }
-
-  100% {
-    color: #dd2e44;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: black;
-  color: #dd2e44;
-  font-family: "Press Start 2P", cursive;
-  text-align: center;
-  margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: #0f0;
+    line-height: 1.6;
 }
 
-nav {
-  padding: 1%;
-  background-color: #202020;
-  border-bottom: 2px solid #dd2e44;
-  width: 100%;
-  box-sizing: border-box;
+header {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: #dd2e44;
-  margin: 0 15px;
-  display: inline-block;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #f00;
 }
 
-nav a:hover {
-  color: white;
-  font-size: 18px;
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #0f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 section {
-  padding: 20px;
+    margin-bottom: 3rem;
+    border: 2px solid #0f0;
+    padding: 1rem;
 }
 
-#home h2 {
-  animation: colorChange 2s infinite; /* Animasyonun süresi ve tekrarlama */
-  margin: 0;
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px #00f;
 }
 
-.game-box {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  background-color: #303030;
-  border: 2px solid #dd2e44;
-  width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
+.oyun-listesi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
-.game-box img {
-  width: 100%;
-  height: auto;
+.oyun {
+    background-color: #222;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.game-box p {
-  font-size: 15px;
+.oyun:hover {
+    background-color: #333;
 }
 
-.game-description {
-  font-size: 0.8em;
-  color: #ffffff;
-  margin-top: 10px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-section#about, section#contact {
-  text-align: center; 
-  padding: 50px;
-  max-width: 100%;
-  margin: 0 auto; /* Ortalamak için */
+input, textarea, button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    background-color: #111;
+    color: #0f0;
+    border: 1px solid #0f0;
 }
 
-section#about h2, section#contact h2 {
-  color: white;
+button {
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-section#about p, section#contact p {
-  margin-top: 30px; /* Paragraf ile başlık arasına boşluk */
-  line-height: 1.6; /* Daha okunaklı bir yazı aralığı */
+button:hover {
+    background-color: #0f0;
+    color: #000;
 }
 
 footer {
-  padding: 10px;
-  background-color: #202020;
-  border-top: 2px solid #dd2e44;
-  margin-top: 20px;
-  width: 100%;
-  box-sizing: border-box;
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    font-size: 0.8rem;
 }
 
-footer p {
-  font-size: 0.8em;
-  margin: 0;
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .oyun-listesi {
+        grid-template-columns: 1fr;
+    }
 }
 
-.social-icons {
-  margin-top: 15px;
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
-.social-icons a {
-  margin: 0 10px;
-  color: #dd2e44;
-  text-decoration: none;
+.game-container {
+    background-color: #222;
+    border: 1px solid #0f0;
+    overflow: hidden;
 }
 
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
+.game {
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    padding: 10px 0;
-  }
-
-  nav a {
-    margin: 0 5px;
-    font-size: 14px;
-  }
-
-  .game-box {
-    width: 90%;
-    max-width: none;
-    margin: 10px auto;
-  }
-
-  section#about, section#contact {
-    padding: 30px 15px;
-  }
-
-  footer {
-    padding: 15px;
-  }
-
-  .social-icons img {
-    width: 25px;
-    height: 25px;
-  }
+.game:hover {
+    background-color: #333;
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
+.game-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #111;
+    padding: 0 1rem;
+}
 
-  nav {
-    padding: 5px 0;
-  }
+.game-details.active {
+    max-height: 80%;
+    padding: 1rem;
+}
 
-  nav a {
-    font-size: 12px;
-    display: block;
-    margin: 8px 0;
-  }
+.game-details p {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
 
-  #home h2 {
-    font-size: 1.5em;
-  }
+.game-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0f0;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+}
 
-  .game-box {
-    width: 95%;
-    max-width: none;
-    margin: 10px auto;
-  }
+.game-link:hover {
+    background-color: #00f;
+    color: #fff;
+}
 
-  .game-box p {
-    font-size: 13px;
-  }
+.logo-title {
+    display: flex;
+    align-items: center;
+}
 
-  section#about, section#contact {
-    padding: 20px 10px;
-  }
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
 
-  footer {
-    padding: 10px;
-  }
-
-  .social-icons img {
-    width: 20px;
-    height: 20px;
-  }
+.game-logo {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
