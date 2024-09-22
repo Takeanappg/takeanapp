@@ -1,77 +1,85 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Takeanapp</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="images/appstore-logo.png" />
+    <link rel="icon" type="image/x-icon" href="images/appstorelogo.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TakeaNapp Retro Game Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon added -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#games">Games</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="home">
-        <h2>Welcome to Takeanapp!</h2>
-    </section>
+    <main>
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>Takeanapp is a studio that creates games and apps.</p>
+        </section>
 
-    <section id="games">
-        <h1>Games & Apps</h1>
-        <div class="game-box">
-            <img src="images/circle360-200x200.png" alt="Game 1" />
-            <h3>360 Circle</h3>
-            <p class="game-description">
-                360 Circle is an endless game where you guide a circle to catch orbs and avoid meteors.
-            </p>
-            <a href="https://play.google.com/store/apps/details?id=org.takeanapp.circle360&hl=tr&gl=US" target="_blank">LINK</a>
-        </div>
-        <div class="game-box">
-            <img src="images/neyapsak-200x200.png" alt="App 1" />
-            <h3>Ne Yapsak?</h3>
-            <p class="game-description">
-                Turkish recommendations for movies, food and random yes-no answers with the luck sphere.
-            </p>
-            <a href="https://play.google.com/store/apps/details?id=org.takeanapp.circle360&hl=tr&gl=US" target="_blank">LINK</a>
-        </div>
-    </section>
+        <section id="games">
+            <h2>Games & Apps</h2>
+            <div class="game-list">
+                <div class="game-container">
+                    <div class="game">
+                        <img src="images/360circle16x16.png" alt="360 Circle Logo" class="game-logo">
+                        360 Circle Game
+                    </div>
+                    <div class="game-details">
+                        <p>360 Circle is an endless game where you capture orbits and avoid meteors</p>
+                        <a href="https://play.google.com/store/apps/details?id=org.takeanapp.circle360&hl=tr&gl=US" target="_blank" class="game-link">Play Now</a>
+                    </div>
+                </div>
+                <div class="game-container">
+                    <div class="game">
+                        <img src="images/HabbitStreak16x16.png" alt="Habbit Streak Logo" class="game-logo">
+                        Habbit Streak App
+                    </div>
+                    <div class="game-details">
+                        <p>A mobile habit tracking application that allows you to monitor and track your daily habits, helping you create positive routines over time.</p>
+                        <a href="#" class="game-link">Use Now</a>
+                    </div>
+                </div>
+                <div class="game-container">
+                    <div class="game">
+                        <img src="images/NeYapsak16x16.png" alt="Ne Yapsak? Logo" class="game-logo">
+                        Ne Yapsak? App
+                    </div>
+                    <div class="game-details">
+                        <p>Turkish recommendations app for movies, food and random yes-no answers with the luck sphere.</p>
+                        <a href="https://play.google.com/store/apps/details?id=org.takeanapp.circle360&hl=tr&gl=US" target="_blank" class="game-link">Use Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>
-            Hello, my name is Emre Sezer. I am a computer engineer. I am working on improving the 'Takeanapp' project, which I use for hobby purposes.
-        </p>
-    </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Hello, my name is Emre Sezer. I am a computer engineer. I am working on improving the 'Takeanapp' project, which I use for hobby purposes.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Have questions or want to collaborate? Reach out to us!</p>
-        <p>Email: takeanappgames@gmail.com</p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Have questions or want to collaborate? Reach out to us!</p>
+            <p>Email: takeanappgames@gmail.com</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Takeanapp - All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/@TakeAnApp" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" />
-            </a>
-            <a href="https://github.com/EmreSezr?tab=repositories" target="_blank">
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" />
-            </a>
-            <a href="https://www.linkedin.com/in/-emresezer/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" />
-            </a>
-            <a href="https://play.google.com/store/apps/dev?id=5893797127333936837&hl=tr&gl=US" target="_blank">
-                <img src="https://i1.wp.com/9to5google.com/wp-content/uploads/sites/4/2022/07/current-google-play-icon.jpg?ssl=1" alt="Google Play Store" />
-            </a>
-        </div>
+        <p>&copy; 2024 TakeaNapp. All rights reserved.</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
